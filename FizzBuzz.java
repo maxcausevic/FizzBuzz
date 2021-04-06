@@ -1,0 +1,21 @@
+public class FizzBuzz {
+
+    public static String fizzBuzz(int number) {
+
+            if(number % 5 == 0 && number % 3 == 0)
+                return "FizzBuzz";
+            if(number%5 ==0)
+                return "Fizz";
+            if(number%3 == 0) 
+                return "Buzz";
+            return Integer.toString(number);
+    }
+    public static void main(String[] args){
+        for (int i=0; i<=100; i++){
+            String result = fizzBuzz(i);
+            String output = String.format("Number: %d: result:%s",i,result);
+            System.out.println(output);
+        }
+    }
+}
+
